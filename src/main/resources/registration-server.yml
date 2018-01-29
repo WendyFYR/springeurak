@@ -6,4 +6,4 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
 server:
-  port: 1111   # HTTP (Tomcat) port
+  port: 8080   # HTTP (Tomcat) port
