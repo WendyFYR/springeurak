@@ -1,9 +1,12 @@
 # Configure this Discovery Server
 eureka:
   instance:
-    hostname: cloud-eureka-server  #localhost
+    hostname:  localhost   #cloud-eureka-server  it will display the peer as 8796
   client:  # Not a client, don't register with yourself
     registerWithEureka: false
     fetchRegistry: false
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 4000
 server:
   port: 8080   # HTTP (Tomcat) port
